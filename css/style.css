@@ -6,6 +6,24 @@
     box-sizing: content-box;
 }
 
+header .row{
+    background-color: #2C3E50;
+    min-height: 80px;
+}
+
+#jumbotron .row{
+    background-color: #1ABC9C;
+    /* DEBUG */
+    min-height: 500px;
+}
+
+[class*=col-]{
+    min-height: 50px;
+    background-color: blueviolet;
+    border: solid 2px black;
+}
+
+
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {  }
 
