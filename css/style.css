@@ -48,13 +48,31 @@ header .row{
     border-radius: 5px;
 }
 
+/* jumbotron */
 #jumbotron{
     background-color: #1ABC9C;
 }
 
-#jumbotron .row{
-     /* DEBUG */
-     min-height: 500px;
+.jumbo-box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.jumbo-box img{
+    max-width: 50%;
+}
+
+.jumbo-box h6{
+    display: block;
+    white-space: nowrap;
+    font-size: 0.9em;
+}
+
+/* Portfolio */
+#portfolio img{
+    max-width: 100%;
 }
 
 
@@ -73,10 +91,18 @@ header .row{
     .nav-list{
         display: flex;
     }
+
+    .jumbo-box img{
+        max-width: 30%;
+    }
   }
 
 /* Large devices (desktops, 992px and up) */
-@media (min-width: 992px) {  }
+@media (min-width: 992px) {
+    .jumbo-box img{
+        max-width: 20%;
+    }
+  }
 
 /* X-Large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {  }
