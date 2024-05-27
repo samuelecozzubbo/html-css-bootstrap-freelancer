@@ -5,11 +5,11 @@
     padding: 0;
 }
 
-[class*=col]{
-    /* min-height: 50px;  */
+/* [class*=col]{
+    min-height: 50px;
     background-color: blueviolet;
     border: solid 2px black;
-}
+} */
 
 header{
     background-color: #2C3E50;
@@ -71,8 +71,23 @@ header .row{
 }
 
 /* Portfolio */
+#portfolio{
+    padding: 20px;
+}
+
 #portfolio img{
     max-width: 100%;
+}
+
+/* Aboutus */
+#about-us{
+    padding: 20px;
+    background-color: #1ABC9C;
+}
+
+#about-us p{
+    margin-top: 20px;
+    color: white;
 }
 
 
