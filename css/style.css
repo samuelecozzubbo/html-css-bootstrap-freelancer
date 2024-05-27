@@ -5,6 +5,15 @@
     padding: 0;
 }
 
+.button{
+    color: white;
+    border: solid 1px white;
+    padding: 8px;
+    border-radius: 5px;
+    display: inline-block;
+    text-decoration: none;
+}
+
 /* [class*=col]{
     min-height: 50px;
     background-color: blueviolet;
@@ -83,6 +92,10 @@ header .row{
 #about-us{
     padding: 20px;
     background-color: #1ABC9C;
+}
+
+#about-us .section-title{
+    color: white;
 }
 
 #about-us p{
