@@ -1,34 +1,79 @@
 *{
     font-family: “Helvetica Neue”, Helvetica, Arial, sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
-.selector-for-some-widget {
-    box-sizing: content-box;
-}
-
-header .row{
-    background-color: #2C3E50;
-    min-height: 80px;
-}
-
-#jumbotron .row{
-    background-color: #1ABC9C;
-    /* DEBUG */
-    min-height: 500px;
-}
-
-[class*=col-]{
-    min-height: 50px;
+[class*=col]{
+    /* min-height: 50px;  */
     background-color: blueviolet;
     border: solid 2px black;
 }
+
+header{
+    background-color: #2C3E50;
+}
+
+header .row{
+    height: 80px;
+}
+
+.logo{
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+.nav-list{
+    flex-direction: row;
+    justify-content: flex-end;
+    display: none;
+    list-style: none;
+    gap: 20px;
+    font-size: 1em;
+    max-height: 10px;
+}
+
+.nav-list a{
+    color: white;
+    text-decoration: none;
+}
+
+.fa-bars{
+    color: gray;
+    font-size: 25px;
+    border: solid 1px white;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+#jumbotron{
+    background-color: #1ABC9C;
+}
+
+#jumbotron .row{
+     /* DEBUG */
+     min-height: 500px;
+}
+
+
+
 
 
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {  }
 
 /* Medium devices (tablets, 768px and up) */
-@media (min-width: 768px) {  }
+@media (min-width: 768px) {
+    .fa-bars{
+        display: none;
+    }
+
+    .nav-list{
+        display: flex;
+    }
+  }
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {  }
