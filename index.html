@@ -118,10 +118,10 @@
                 </div>
 
                 <div class="row">
-                    <div class="col-8 offset-2 col-md-6 offset-md-0">
+                    <div class="col-8 offset-2 col-md-4 offset-md-2">
                         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur nemo dignissimos quo animi non aliquam cupiditate consequuntur! Exercitationem esse eos, eveniet debitis officia, facere cupiditate veritatis accusantium sint, iste quam.</p>
                     </div>
-                    <div class="col-8 offset-2 col-md-6 offset-md-0">
+                    <div class="col-8 offset-2 col-md-4 offset-md-0">
                         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate aspernatur fuga soluta dignissimos hic facilis aliquam at ratione, amet fugit beatae illo laborum dolores iusto impedit ea ullam labore voluptatem?</p>
                     </div>
                 </div>
@@ -137,7 +137,7 @@
         <section id="form">
             <div class="container">
                 <div class="row">
-                    <div class="col-8 offset-2 col-md-10 offset-md-1 text-center">
+                    <div class="col-6 offset-3 col-md-10 offset-md-1 text-center">
                         <div class="section-title">
                             <h2>CONTACT ME</h2>
                             <div><img src="img/black-star.png" alt=""></div>
@@ -148,7 +148,11 @@
             <div class="row">
                 <div class="col-8 offset-2 text-center">
                     <form action="#">
-                        <input type="text" value="name" placeholder="Name">
+                        <input class="form-element" type="text" name="name" placeholder="Name">
+                        <input class="form-element" type="email" name="email" placeholder="Email Address" required="required">
+                        <input class="form-element" type="text" name="phone-number" placeholder="Phone Number">
+                        <textarea class="form-element" name="message" cols="100" placeholder="Message"></textarea>
+                        <input class="form-element" id="submit" type="submit" value="Send">
                     </form>
                 </div>
             </div>
